@@ -1,0 +1,4 @@
+#!/bin/zsh
+filename="$1"
+ext=".cpp"
+g++ "$filename$ext" -o $filename && ./$filename
