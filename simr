@@ -1,4 +1,4 @@
 #!/bin/zsh
 filename="$1"
 ext=".cpp"
-g++ "$filename$ext" -o $filename && ./$filename
+g++ "$filename$ext" -std=c++17 -fsanitize=address -o $filename && ./$filename
