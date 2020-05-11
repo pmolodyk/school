@@ -1,0 +1,5 @@
+#!/bin/zsh
+filename="$1"
+ext=".c"
+gcc "$filename$ext" -std=gnu11 -fsanitize=address -Wall -Werror -o $filename && ./$filename
+
